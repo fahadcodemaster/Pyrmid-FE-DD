@@ -1,0 +1,843 @@
+
+/* My Css Starts Here
+===================== */
+img{max-width: 100%;}
+.preview-box{background-color: white;}
+.breadcumb .mainbreadcumb,.mainbreadcumb,.jumbotron{background-color: transparent;}
+.mainside:empty{display: none;}
+
+input,input.form-control,
+select,select.form-control,
+textarea,textarea.form-control{
+  margin-bottom: 20px;
+}
+.form-control:focus,
+input.form-control:focus{box-shadow: none;border-color: $color;}
+.social--btn button.btn{
+  background-color: transparent !important;
+  border: hidden;
+  box-shadow: none !important;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  // left: 0;top: 0;
+}
+.social--btn:hover{color: $color;
+  border-color: $color !important;}
+
+button,.btn-main,.btn{border-radius: 10px !important;}
+.privacy-page{padding-top: 150px;
+  h2{color: $color-lighter;font-size: 22px;}
+}
+.blog-Detail-page,
+.blog-page{padding-top: 150px;
+  h2{color: $color-lighter;font-size: 22px;}
+}
+
+@media (max-width:1200px){
+  .blog-page,.blog-Detail-page,
+  .privacy-page{padding-top: 50px;}
+}
+@media (max-width:767px){
+  .privacy-page{padding-top: 50px;
+    h1{font-size: 40px;}
+    h2{font-size: 22px;}
+  }
+}
+@media (max-width:575px){
+  .privacy-page{text-align: center;
+    h1{font-size: 30px;}
+    h2{font-size: 18px;}
+  }
+}
+/* Animation Panel */
+.small-pnl{
+  position: absolute;left: 0;right: 0;top: 0;height: 50vh; 
+  background-image: url(../assets/images/bg.png);z-index: -1;
+  background-size: cover;background-position: top;background-repeat: no-repeat;
+  &:before{
+    position: absolute;content: "";left: 0;right: 0;bottom: 0;height: 20%;
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); 
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); 
+  }
+}
+.circle-span{display: inline-block;border-radius: 50%;position: absolute;opacity: 0.5;}
+.square-span{display: inline-block;position: absolute;opacity: 0.3;width: 20px;height: 20px;animation: rotationanim 5s ease-out infinite;}
+.circle-span.star{
+  width: 40px;height: 40px;border-radius: 0;opacity: 0.8;
+  background-image: url(../assets/images/star.png);
+  background-size: 100% 100%; 
+  animation: rotationanim 5s ease-out infinite;
+  -webkit-animation: rotationanim 5s ease-out infinite;
+  -moz-animation: rotationanim 5s ease-out infinite;
+}
+@keyframes rotationanim {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(180deg);}
+}
+@-webkit-keyframes rotationanim {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(180deg);}
+}
+@-moz-keyframes rotationanim {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(180deg);}
+}
+.square-big-span.greeen{
+  display: inline-block;position: absolute;width: 100px;height: 75px;
+  background-image: url(../assets/images/green.png);
+  background-size: 100% 100%; 
+  animation: translate1 10s ease-out infinite;
+  -o-animation: translate1 10s ease-out infinite;
+  -webkit-animation: translate1 10s ease-out infinite;
+  -moz-animation: translate1 10s ease-out infinite;
+}
+.square-big-span.yellow{
+  display: inline-block;position: absolute;width: 100px;height: 75px;
+  background-image: url(../assets/images/yellow.png);
+  background-size: 100% 100%; 
+  animation: translate2 10s ease-out infinite;
+  -o-animation: translate2 10s ease-out infinite;
+  -webkit-animation: translate2 10s ease-out infinite;
+  -moz-animation: translate2 10s ease-out infinite;
+}
+  @-moz-keyframes translate2 {
+  0% {transform: translate(0px,0px);}
+  25% {transform: translate(-20px,20px);}
+  50% {transform: translate(0px,0px);}
+  75% {transform: translate(-20px,20px);}
+  100% {transform: translate(0px,0px);}
+} 
+@-webkit-keyframes translate2 {
+  0% {transform: translate(0px,0px);}
+  25% {transform: translate(-20px,20px);}
+  50% {transform: translate(0px,0px);}
+  75% {transform: translate(-20px,20px);}
+  100% {transform: translate(0px,0px);}
+} 
+@keyframes translate2 {
+  0% {transform: translate(0px,0px);}
+  25% {transform: translate(-20px,20px);}
+  50% {transform: translate(0px,0px);}
+  75% {transform: translate(-20px,20px);}
+  100% {transform: translate(0px,0px);}
+} 
+@-moz-keyframes translate1 {
+  0% {transform: translateY(0px);}
+  25% {transform: translateY(20px);}
+  50% {transform: translateY(0px);}
+  75% {transform: translateY(20px);}
+  100% {transform: translateY(0px);}
+} 
+@-webkit-keyframes translate1 {
+  0% {transform: translateY(0px);}
+  25% {transform: translateY(20px);}
+  50% {transform: translateY(0px);}
+  75% {transform: translateY(20px);}
+  100% {transform: translateY(0px);}
+} 
+@keyframes translate1 {
+  0% {transform: translateY(0px);}
+  25% {transform: translateY(20px);}
+  50% {transform: translateY(0px);}
+  75% {transform: translateY(20px);}
+  100% {transform: translateY(0px);}
+} 
+.anim.small{width: 20px;height: 20px;}
+.anim.mid{width: 30px;height: 30px;}
+.anim.big{height: 50px;width: 50px;}
+.anim.yelow{background-color: #FEF9C3;}
+.anim.green{background-color: $color;}
+.position-1{right: 15%;top: 35%;}
+.position-2{left: 5%;top: 45%;}
+.position-3{right: 7%;top: 10%;}
+.position-4{right: 5%;top: 40%;}
+.position-5{left: 8%;top: 35%;}
+.position-6{left: 8%;top: 10%;}
+.position-7{left: 5%;top: 15%;}
+.position-8{right: 7%;top: 25%;}
+.position-9{left: 15%;top: 45%;}
+.position-10{right: 9%;top: 10%;}
+.position-11{right: 15%;top: 0%;}
+.secnd-anime .position-11{left: 60%;bottom: 5%;right: unset;top: unset;}
+.position-12{right: 5%;top: 60%;}
+.secnd-anime .position-12{left: 10%;bottom: 5%;right: unset;top: unset;}
+/* Animation Panel */
+
+
+.navbar .breakpoint__xl-only.lft-mnu{margin-left: 0;margin-right: auto;}
+a{
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media (min-width: 1320px){
+  .container {max-width: 1450px;}
+}
+.ptb-o{padding-bottom: 0;}
+.breadcrumb{
+  background-color: transparent;
+  align-items: center;justify-content: center;
+  li{color: $color-lighter;
+    a{color: $color-lighter;text-decoration:none !important;
+    &:hover{color: $color;}}
+  }
+}
+
+
+
+/* ======= Connect wallet ======== */ 
+.connect-wllet-main-btn{
+  display: inline-block;border-radius: 15px;border:none;
+  color: white;font-weight: bold;padding: 12px 15px;max-width: 300px;
+  background: rgb(1,167,248);
+  background: -moz-linear-gradient(top,  rgba(1,167,248,1) 0%, rgba(2,106,196,1) 100%); 
+  background: -webkit-linear-gradient(top,  rgba(1,167,248,1) 0%,rgba(2,106,196,1) 100%); 
+  background: linear-gradient(to bottom,  rgba(1,167,248,1) 0%,rgba(2,106,196,1) 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01a7f8', endColorstr='#026ac4',GradientType=0 ); 
+  &:hover{color: white;}
+}
+// .wallet-img{
+//   display: inline-block;
+//   -webkit-animation: rotating 60s linear infinite;
+//   -moz-animation: rotating 60s linear infinite;
+//   -ms-animation: rotating 60s linear infinite;
+//   -o-animation: rotating 60s linear infinite;
+//   animation: rotating 60s linear infinite;
+ 
+// }
+// @-webkit-keyframes rotating  {
+//   from {
+//     -webkit-transform: rotate(0deg);
+//     -o-transform: rotate(0deg);
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     -webkit-transform: rotate(360deg);
+//     -o-transform: rotate(360deg);
+//     transform: rotate(360deg);
+//   }
+// }
+// @keyframes rotating {
+//   from {
+//     -ms-transform: rotate(0deg);
+//     -moz-transform: rotate(0deg);
+//     -webkit-transform: rotate(0deg);
+//     -o-transform: rotate(0deg);
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     -ms-transform: rotate(360deg);
+//     -moz-transform: rotate(360deg);
+//     -webkit-transform: rotate(360deg);
+//     -o-transform: rotate(360deg);
+//     transform: rotate(360deg);
+//   }
+// }
+
+.breadcumb .mainbreadcumb{
+  .box-login{
+    text-align: center;
+      h1{font-size: 65px;text-transform: uppercase;margin-bottom: 20px;color: $color-lighter;}
+  }
+}
+@media (max-width:1199px){
+  .breadcumb .mainbreadcumb{padding: 50px 50px;
+    .box-login{ padding:0; h1{font-size: 50px;}}
+  }
+}
+@media (max-width:1199px){
+  .breadcumb .mainbreadcumb{
+    .box-login{ max-width: 400px;margin: 0 auto;}
+  }
+  .p-tab-0{padding-top: 0;padding-bottom: 0;}
+}
+@media (max-width:767px){
+  .breadcumb .mainbreadcumb{padding: 50px 15px;
+    .box-login h1{font-size: 40px;}
+    .wallet-img{max-width: 80%;}
+    .wallet-img img{max-width: 100%;}
+  }
+}
+@media (max-width:575px){
+  .breadcumb .mainbreadcumb{padding: 50px 15px;
+    .box-login h1{font-size: 30px;}
+  }
+}
+/* ======= Connect wallet ======== */
+
+/* ======= My Profile Page ========= */
+.profile-banner {padding-top: 150px;padding-bottom:0;text-align:center;
+  .banner{height: 350px;background-repeat: no-repeat;background-size: cover;background-position: center center;border-radius: 5px;width: 95%;margin: 0 auto;
+    max-width: 1600px;
+  }
+}
+.follow-btn{
+  display: inline-block;width: 100%;border-radius: 50px !important;border:1px solid $color;
+  color: $color-lighter;font-size: 16px;background-color: $white;@include trans();
+  padding: 3px 10px;text-transform: uppercase;margin-top: 20px;margin-bottom: 10px;
+  &:hover{
+    background-color: $color;color: $white;font-weight: bold;
+  }
+}
+.myprofile-container{padding-top:0;padding-bottom: 0;}
+.profile-info-container{
+  display: flex;max-width:100%;margin:0 auto;padding-top:0;
+  .profile-container{
+    background-color: $white;padding: 40px 30px 30px;position: relative;top:-80px;margin-bottom: 0;
+    width: 250px;overflow: hidden;border-radius: 8px;text-align: center;display: inline-block;float: left;
+    --tw-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06),0px 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+    .profile_wallet{position: relative;}
+    .Profile-txt{position: relative;
+      h4{color: $black;}
+      #btn_copy{
+        right: 0;
+        // background-color: $white;
+        // color: $color;
+        // font-size: 16px;
+        // border-radius: 0;
+        // box-shadow: none;
+        // border:none;
+        // padding: 1px 15px;
+        right: 0;}
+    }
+    .email-span{font-weight: normal;display: inline-block;width: 100%;font-size: 15px;margin-bottom: 20px;}
+    .profile-pic-cntnr{display: inline-block;border-radius: 100%;margin-bottom:20px;
+      img{border-radius: 100%;}
+    }
+  
+  }
+  .profile-text-container{
+    display: inline-block;float: left;text-align: left;
+    width: calc(100% - 250px);  background-color:$white;padding:50px 30px 0;
+    p{color: $color-lighter;font-size: 16px;margin-bottom: 30px;}
+    h5{color: $color-lighter;font-weight: 500;font-size: 20px;}
+    .my-social-list{display: inline-block;width: 100%;padding-left:0;margin-top:15px;
+      li{display: inline-block;float: left;margin-right: 15px;
+        a{display: inline-block;color:$color-lighter;font-size:16px;
+          i{display: inline-block;width: 35px;height: 35px;border-radius: 100%;color: $color;text-align: center;font-size: 20px;padding-top: 8px;margin-right: 5px;
+            background-color: rgba(153,246,228,1);@include trans();
+          }
+          &:hover{color: $color;text-decoration: none;
+            i{color: rgba(153,246,228,1);background-color: $color;}
+          }
+
+        }
+      }
+    }
+  }
+}
+@media (max-width:1199px){
+  .profile-banner{padding-top: 0;}
+}
+
+@media (max-width:991px){
+  .profile-banner .banner{height: 250px;margin-bottom: 30px;}
+  .profile-info-container .profile-container{top: 0;}
+  .profile-info-container .profile-text-container{margin-bottom: 50px;}
+  .de_nav{margin-bottom:30px;display:inline-block;width: 100%;}
+}
+@media (max-width:767px){
+  .profile-banner .banner{height: 200px;}
+  .profile-info-container .profile-text-container{width: 100%;padding: 50px 0 0;margin-bottom: 30px;}
+  .de_nav{text-align: left;
+    li{margin-right: 10px;
+      span,
+      a{padding: 0.5rem;}
+    }
+  }
+}
+@media (max-width:575px){
+  .profile-banner .banner{height: 150px;}
+  .myprofile-container{text-align: center;}
+  .profile-info-container .profile-container{float: none;}
+  .profile-info-container .profile-text-container{text-align: center;}
+  .profile-info-container .profile-text-container .my-social-list li{float: none;margin-bottom: 15px;width: 100%;margin-right: 0;}
+  .de_nav {text-align: center;
+    li{margin-bottom: 20px;margin-left: 5px;margin-right: 5px;}
+  }
+  .mb-cntr{text-align: center;
+    .nft__item{max-width: 300px;margin: 0 auto 30px !important;}
+  }
+}
+// .SideDrop{width: 150px !important;}
+// .d_profile.my-profile-d{
+//   display: inline-block;width: 100%;
+//   margin: 0 auto;position: relative;text-align: center;left: 0;
+// }
+// .profile_avatar,.profile_name{display: inline-block;float: left;position: relative;}
+// .profile_name{margin-left: 0;
+//     .profile_wallet,.join-span,
+//       h4{color: $color-lighter;}
+//   }
+// .profile_name .heloo-heading.pr,
+// .heloo-heading.pr{position: relative;left: unset;margin-bottom: 0px;line-height: unset;color: $color-lighter;font-size: 90px;margin-top: 00px;}
+// .join-span{display: inline-block;width: 100%;}
+// .profile_name{width: 100%;position: relative;text-align: left;max-width:400px;}
+// .profile-brdr{width: 500px;height: 400px;position: relative;border-radius: 50%;position: relative;text-align: center;
+//   div{margin: 0 auto;}
+//   &::before{
+//     position: absolute;content: "";left: 42px;top: -7px;width: 415px;height: 415px;border-radius: 50%;z-index: -1;
+//     border: 10px solid $color;
+//     box-shadow: 2px 2px 20px 0px #01a9fa;
+//   }
+// }
+// .my-profile-information{
+//   position: relative;display: inline-block;width: 100%;
+//   .img-pnl{display: inline-block;width: 400px;float: left;text-align:center;
+//     position: relative;border-radius: 50%;
+//     img{max-width: 100%;border-radius: 50%;border:5px solid $color;}
+//   }
+//   .txt-pnl{
+//     display: inline-block;width: calc(100% - 400px);
+//     float: left;padding-left: 30px;
+//   }
+// }
+// .profile_follow{position: absolute;bottom: 80px;right: 0;}
+// .my-profile-btn{
+//   display: inline-block;float: left;position: relative;margin-top: 0 !important;margin-right: 15px !important;width: auto;
+//   background: transparent;padding: 0;
+//   .Secbtn,.Sinoutbtn,.Shrbtn{
+//     background: none !important;
+//     border: none !important;
+//     color: $color-lighter;font-size: 16px;text-align: center;padding-top: 8px;
+//     width: 40px;height: 40px;padding-left: 0;border-radius: 50%;border:1px solid $color-lighter !important;display: inline-block;
+//     &:hover{color: $color;border-color: $color !important;}
+//   }
+// }
+// .myprofile-container{padding-top: 200px;padding-bottom: 20px ;}
+// @media (max-width:1199px){
+//   .myprofile-container{padding-top: 100px;padding-bottom: 50px ;}
+//   .d_profile.my-profile-d{left: 0;}
+// }
+// @media (max-width:991px){
+//   .d_profile.my-profile-d,.d_profile{left: 0;}
+//   .profile_name,.profile_avatar{text-align: center;width: 100%;}
+//   .profile-brdr{margin: 50px auto 20px;}
+//   .profile_follow{position: relative;right: unset;width: 100%;text-align: center;bottom: 0;display: inline-block;margin-top: 0;}
+//   .my-profile-btn{float: none;margin-left: 7.5px !important;margin-right: 7.5px !important;}
+//   .myprofile-container{padding-top: 50px;padding-bottom: 10px ;}
+// }
+// @media (max-width:767px){
+//   .de_nav li span{font-size: 15px;}
+//   .profile_name .heloo-heading.pr, .heloo-heading.pr{font-size: 70px;margin-top: 0;}
+// }
+// @media (max-width:575px){
+//   .profile_name .heloo-heading.pr, .heloo-heading.pr{font-size: 80px;}
+//   .profile-brdr{width: 280px;height: 280px;}
+// }
+/* ======= My Profile Page ========= */
+
+
+/* ======= Create Collection ======== */
+.collect-create-feature-image,.collect-create-banner-image,
+.collect-create-logo{width: 100%;padding: 100px 50px;}
+textarea.form-control,
+textarea{min-height: 120px;}
+.collection-social-links {
+  input{border-radius: 0 5px 5px 0;}
+  .social-icon-block{background-color: $color;
+    svg{fill: $white;color: white;}
+  }
+}
+#form-create-item .btn-cntnr .btn-main{margin-left: 0;margin-right: 15px;}
+.custom-control-input:checked ~ .custom-control-label::before{
+  border-color: $color; background-color: $color;
+}
+/* ======= Create Collection ======== */
+
+/* ====== Wallet ======= */
+.wallet-panel{
+  display: inline-block;width: 100%;text-align:center;margin-top:50px;
+  .wallet-panel-inner{
+    display: inline-block;width: 100%;padding:30px 30px;border-radius: 8px;background-color: $white;max-width: 300px;
+    border-width: 1px;border-style: solid;border-color: rgba(229,231,235,1);text-align:center;
+    .wallet-img{display: inline-block;width: 100px;margin-bottom: 20px;}
+    .btn.btn-main{margin: 0 auto;opacity: 0;padding-top: 12px;padding-bottom: 12px;}
+    &:hover .btn.btn-main{opacity: 1;}
+    p{color: $color-lighter;}
+  }
+} 
+/* ====== Wallet ======= */
+.nft_coll span.pic-demo{
+  height: 300px;text-align:center;display:inline-block;width:100%;background-image:none !important; position: relative;
+  img{max-width: 100%;max-height: 300px;margin: 0 auto;border-radius: 5px;}
+}
+
+
+
+
+.profile_name{position: relative;
+  button#btn_copy{right: 0;}
+}
+/* User nFt Details Page Starts Here
+==================================== */
+.my-profile-Img-pnl {
+  display: inline-block;border-radius: 20px;float: left;
+  background-repeat: no-repeat !important;
+  background-position: center top !important;
+  background-image: none !important;text-align: center;
+}
+.my-profile-details-list {
+  display: inline-block;margin: 0;
+  background: #dce6f2;position: relative;
+  width: 100%;border-radius: 20px;padding: 15px 20px;
+  list-style: none;list-style-type: none;margin-bottom: 20px;
+  li {
+    position: relative;display: inline-block;width: 100%;
+    list-style: none;list-style-type: none;margin-bottom: 0;
+    font-size: 14px;float: left;color: $black;
+    p {display: inline-block;width: 55%;float: left;text-align: left;margin-bottom: 0;}
+    span {display: inline-block;width: 40%;float: right;text-align: right;}
+  }
+  li.head {color: $black;margin-bottom: 10px;}
+  &:hover li.head {color: $color;}
+  &:before {
+    position: absolute;
+    left: 50%;right: 50%;height: 5px;top: 0;
+    content: "";background-color: $color;z-index: 1;
+}
+  &:hover:before {left: 20%;right: 20%;}
+}
+.my-profile-details-list.list-view {padding-left: 0;padding-right: 0;padding-top: 0;
+  li {padding-left: 20px;padding-right: 20px;padding-top: 5px;padding-bottom: 5px;
+  }
+  li.head {
+    background-color: #abcbf1;padding: 10px 20px;
+    border-radius: 20px 20px 0 0;margin-bottom: 20px;color: $black;
+  }
+  li.brdr {
+    color: $black;border-bottom: 1px solid;
+    border-top: 1px solid;border-color: #363a3d;
+    padding-top: 5px;padding-bottom: 5px;margin-bottom: 10px;
+  }
+}
+.profiler-info {
+  h2 {color: #a2a2a2;font-weight: normal;font-size: 18px;margin-bottom: 10px;line-height: unset;}
+  h3 {color: white;font-weight: normal;font-size: 30px;margin-bottom: 10px;line-height: unset;}
+  h4 {color: #a2a2a2;font-weight: normal;font-size: 16px;margin-bottom: 10px;line-height: unset;}
+}
+.share-info-list {display: inline-block;padding: 0;width: 100%;margin-bottom: 0;
+  li {
+    display: inline-block;margin-right: 10px;float: left;
+    font-weight: bold;text-transform: uppercase;
+    &:first-child{line-height: 30px;}
+    a {
+      background: none !important;border: none !important;
+      color: #3d3d3d;float: left;font-size: 14px;
+      text-align: center;padding-top: 4px;width: 30px;
+      height: 30px;padding-left: 0;
+      border-radius: 50%;border: 1px solid #3d3d3d !important;display: inline-block;
+      &:hover {background-color: $color !important; color: $white;border-color: $color !important;}
+    }
+  }
+  a.share-menu-btn {position: relative;
+    span {position: absolute;height: 3px;border-radius: 25px;background-color: #3d3d3d;
+      &:nth-of-type(1) {left: 40%;right: 8px;top: 10px;}
+      &:nth-of-type(2) {right: 8px;left: 8px;top: 17px;}
+      &:nth-of-type(3) {left: 8px;right: 40%;top: 24px;}
+    }
+    &:hover span {background-color: $color;}
+    &:hover span:nth-of-type(1) {left: 8px;right: 8px;}
+    &:hover span:nth-of-type(2) {left: 8px;right: 8px;}
+    &:hover span:nth-of-type(3) {left: 8px;right: 8px;}
+  }
+}
+.description-details-pnl {background-color: $white;border-radius: 20px;
+  .description-details-text {display: inline-block;float: left;}
+  .description-details-head {padding: 20px;
+    button {float: right;margin-left: 15px;margin-top: 0px;}
+    span {color: $black;}
+    p{font-size: 30px;font-weight: normal;color: $black;margin-bottom: 0;
+      span {font-size: 30px;font-weight: normal;color: $black;}
+    }
+  }
+}
+.description-details-bottom {background-color: #dce6f2;border-radius: 20px;
+  p{margin: 0;}
+  .head {padding: 10px 20px;border-radius: 20px 20px 0 0;background-color: #abcbf1;color: $black;}
+  .description {padding: 20px;
+    p {font-size: 14px;margin-bottom: 20px;color: $black;}
+    a {color: $color;float: right;text-decoration: none;
+      &:hover {text-decoration: underline;}
+    }
+  }
+}
+.time-pnl {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: $white;
+  text-align: center;
+  --tw-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06),0px 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  background-color: #fff;
+  border-radius: 5px;
+  h6{font-size: 16px;font-weight: bold;color: $black;}
+  .timer {
+    display: inline-block;width: 100%;
+    position: relative;padding: 0;margin: 0;
+    li {
+      display: inline-block;
+      position: relative;
+      p {
+        font-size: 44px;
+        color: $black;
+        font-weight: bold;
+        margin: 0;
+        line-height: 60px;
+      }
+      span {
+        font-size: 30px;
+        text-transform: capitalize;
+        display: inline-block;
+        width: 100%;
+        color: $black;
+      }
+      &:first-child{margin-right: 10px;
+      img{position: relative;top: -10px;}}
+    }
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &:hover {
+    .timer li p {
+      color: $black;
+    }
+    .timer li span {
+      color: $black;
+    }
+  }
+}
+
+
+.nft-custome {
+  background-color: #cecece;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  .nft__item_wrap {
+    margin-top: 0;
+    span {
+      width: 100%;
+      display: inline-block;
+      background-repeat: no-repeat !important;
+      background-size: contain !important;
+      background-position: center center !important;
+      border-radius: 15px;
+      height: 270px;
+      // img {
+      //   display: none;
+      // }
+    }
+  }
+  .nft__item_info {
+    padding-top: 25px;
+    h4 {
+      font-weight: normal;
+      font-size: 20px;
+      margin-bottom: 5px;
+      height: auto;
+      color: #3d3d3d;
+    }
+    span {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+  }
+  .author_list_pp {
+    width: 100%;
+    height: auto;
+    border: none;
+    text-align: center;
+    left: 0;
+    top: 255px;
+    margin: 0;
+    a {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 1px solid white;
+      display: inline-block;
+    }
+  }
+  &:before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    right: 50%;
+    top: -5px;
+    height: 5px;
+    background-color: #308afb;
+    z-index: 1;
+    border-radius: 5px 5px 0 0;
+  }
+  &:after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    right: 50%;
+    bottom: -5px;
+    height: 5px;
+    background-color: #308afb;
+    z-index: 1;
+    border-radius: 0 0 5px 5px;
+  }
+  &:hover:after,
+  &:hover:before {
+    left: 15%;
+    right: 15%;
+  }
+  &:hover a {
+    border-color: $color;
+  }
+}
+@media (max-width: 1200px) {
+  .nft-custome .nft__item_wrap span {
+    height: 250px;
+  }
+  .nft-custome .author_list_pp {
+    top: 235px;
+  }
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 768px) {
+  .nft-custome .nft__item_wrap span {
+    height: 200px;
+  }
+  .nft-custome .author_list_pp {
+    top: 190px;
+  }
+}
+@media (max-width: 767px) {
+  .nft_coll span.pic-demo{height: 220px;}
+}
+@media (max-width: 575px) {
+  .txti {
+    text-align: center;
+  }
+  .nft-custome {
+    max-width: 300px;
+    margin: 0 auto 30px;
+    float: none;
+    display: inline-block;
+    width: 100%;
+  }
+  .nft-custome .nft__item_wrap span {
+    height: auto;
+    background-image: none !important;
+    img {
+      display: inline-block;
+    }
+  }
+  .nft-custome .author_list_pp a {
+    width: 45px;
+    height: 45px;
+  }
+  .nft-custome .author_list_pp {
+    top: 15px;
+    width: auto;
+    left: 15px;
+  }
+  .nft-custome .nft__item_wrap {
+    margin-top: 25px;
+  }
+  .nft-custome .nft__item_info {
+    padding-top: 0;
+  }
+  .view-all-btn.white {
+    margin-bottom: 0;
+  }
+}
+
+.item_creator{
+  display: flex;justify-content: space-between; width:100%;float:left;
+  .creator_list_pp {
+    display: inline-block;width: 60px;float:left;
+    a{
+      position: relative;width: 55px;height: 55px;border-radius: 50%;display: inline-block;
+      img{width: 55px;height: 55px;border-radius: 50%;}
+      i{display: inline-block;position: absolute;right: 0;bottom: 0;z-index: 2;background-color: $color;font-size: 8px;color: white;padding: 3px;border-radius: 50%;}
+    }
+  }
+  .creator_list_info{
+    display: inline-block;width: calc(100% - 60px);float:left;color:$black;padding-left:10px;
+    h6{margin-bottom: 0;font-weight: normal;font-size: 14px;text-transform: capitalize;margin-top: 10px;}
+    span{font-size: 16px;font-weight: bold;text-transform: capitalize;}
+  }
+}
+
+.coin-bid-list{
+  display: inline-block;width: 100%;margin-top:30px;padding: 0;margin-bottom:30px;
+  li{display: inline-block;padding-right:80px;position: relative;margin:0;
+    &:not(:first-child):before{position: absolute;content: "";left: -30px;top: 0;bottom: 0;width: 1px;background-color:#D1D5DB;}
+    h6{font-size: 18px;font-weight: bold;color: $black;margin: 0;}
+    p{font-size: 14px;color: #D1D5DB;margin:0;}
+  } 
+}
+
+
+
+.user-visitor-list{
+  display: inline-block;position: relative;width: 100%;padding-left:0;
+  li{
+    display: flex;justify-content: space-between;border-bottom:1px solid #cccccc;padding:15px 0;
+    .img-pnl{display: inline-block;width: 55px;height: 55px;border-radius: 50%;float:left;
+      img{border-radius: 50%;max-width: 100%;}
+    }
+    .txt-pnl{
+      display: inline-block;max-width:calc(100% - 55px);padding-left:15px;float:left;
+      h5{margin: 0;margin-top: 10px;color: $black;font-size: 16px;}
+      p{font-size: 14px;margin:0;
+        span{color: $color;margin-left: 10px;}
+      }
+      p.time-p{
+        color: rgba(209,213,219,1);
+      }
+    }
+    .price-eth{
+      padding-top: 15px;
+      img{margin-right: 10px;}
+      b{margin-right: 10px;}
+    }
+  } 
+}
+.clrd{
+  b{color: $black;}
+  color: $color;
+}
+/* User nFt Details Page Starts Here
+==================================== */
+
+*{word-break: break-all;}
+.reg-btn-green{
+  font-size: 1.25rem;padding-top: 0.875rem;
+  padding-bottom: 0.875rem;padding-left: 2rem;
+  padding-right: 2rem;line-height: 1.75rem;color: white;font-weight: 700;
+  border-color: $color;border-width: 0px;
+  background-position: 0 0;background-size: 200% 200%;
+  @include gradient();
+  background-image: linear-gradient(to right,var(--tw-gradient-stops));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .5s;
+  &:hover{background-position: 100% 100%;}
+}
+
+h1,h2{font-weight: bold; color: $white !important;}
+
+
+
+
+
+
